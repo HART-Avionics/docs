@@ -4,7 +4,6 @@ EECS
 
 Table of Contents
 ---------------------
-- [Overview](#overview)
 - [About the Project](#about-the-project)
   - [Built with](#about-the-project-built-with)
 - [Getting Started](#getting-started)
@@ -18,15 +17,10 @@ Table of Contents
 - [Contacts](#contacts)
 - [Support the Project](#donate)
 
-<a name="overview"></a>
-Overview
-----------
-Placeholder repo for the Oregon State Univerity AIAA High Altitude Rocket Team (HART) ECE & CS avionics group while we get stuff set up.
-
 <a name="about-the-project"></a>
 About the Project
 ---------------------
-Description of the project and it's intended purpose or origin story.
+Placeholder repo for the Oregon State Univerity AIAA High Altitude Rocket Team (HART) ECE & CS avionics group while we get stuff set up.
 
 <a name="about-the-project-built-with"></a>
 ### Built with
