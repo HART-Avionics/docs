@@ -24,24 +24,22 @@ Placeholder repo for the Oregon State Univerity AIAA High Altitude Rocket Team (
 
 <a name="about-the-project-built-with"></a>
 ### Built with
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+<!-- This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples. -->
 
-- Bootstrap
-- JQuery
-- Laravel
+- 
+- 
+- 
 
 <a name="getting-started"></a>
 Getting Started
 ---------------------
-This is an example of how you may give instructions on setting up your project locally. To get a local copy up and running follow these simple example steps.
+<!-- This is an example of how you may give instructions on setting up your project locally. --> To get a local copy up and running follow these simple example steps.
 
 <a name="getting-started-prerequisites"></a>
 ### Prerequisites
-This is an example of how to list things you need to use the software and how to install them.
-- npm
-  ```
-  $> npm install npm@latest -g
-  ```
+<!--List things you need to use the software and how to install them. -->
+
+- 
 - 
 - 
 
@@ -64,7 +62,7 @@ This is an example of how to list things you need to use the software and how to
 <a name="usage"></a>
 Usage
 --------
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.<br>
+<!-- Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.<br> -->
 *For more examples, please refer to the [Documentation]()*
 
 <a name="faq"></a>
@@ -90,14 +88,14 @@ Contributions are what make the open source community such an amazing place to b
 <a name="license"></a>
 License
 -----------
-Distributed under the MIT License. See `LICENSE` for more information.
+<!-- Distributed under the MIT License. -->See `LICENSE` for more information.
 
 <a name="contacts"></a>
 Contacts
 -----------
-Your Name - @your_twitter - example@example.com
+<!-- Your Name - @your_twitter - example@example.com -->
 
-Project Link: https://github.com/your_username/repo_name
+Project Link: https://github.com/orgs/HART-Avionics/projects/3
 
 <a name="donate"></a>
 Support the Project
