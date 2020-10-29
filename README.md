@@ -1,4 +1,4 @@
-EECS
+HART Avionics - EECS Documentation
 ======
 <img src="https://images.squarespace-cdn.com/content/v1/5a19a459e5dd5b3614fc8595/1518733757123-JZ5199GBQVQOEJBC9VKR/ke17ZwdGBToddI8pDm48kOx9thYkxoPEJMHoJ7vUPbh7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmS0k9nmfOWkBD2X4dgpGrpWVYQT8AbCbINUUJycgJH0K3YOIy-qewO29_jEB_UvA_/HARTlogo.jpg" width="200px" height="auto"/>
 
@@ -10,7 +10,7 @@ Table of Contents
   - [Prerequisites](#getting-started-prerequisites)
   - [Installing](#getting-started-installing)
 - [Usage](#usage)
-- [FAQ](#faq)
+<!-- - [FAQ](#faq) -->
 - [Roadmap](#roadmap)
 - [Contributing](#contributing)
 - [License](#license)
@@ -20,7 +20,7 @@ Table of Contents
 <a name="about-the-project"></a>
 About the Project
 ---------------------
-Placeholder repo for the Oregon State Univerity AIAA High Altitude Rocket Team (HART) ECE & CS avionics group while we get stuff set up.
+Documentation repo for the Oregon State Univerity AIAA High Altitude Rocket Team's ECE & CS avionics sub-team.
 
 <a name="about-the-project-built-with"></a>
 ### Built with
@@ -45,34 +45,25 @@ Getting Started
 
 <a name="getting-started-installing"></a>
 ### Installing
-1. Get a free API Key at [the official API key Website](https://example.com).
-2. Clone the repo
+1. Clone the repo
     ```bash
-    $> git clone https://github.com/your_username_/Project-Name.git
-    ```
-3. Install NPM packages
-    ```bash
-    $> npm install
-    ```
-4. Enter your API in config.js
-    ```javascript
-    const API_KEY = 'ENTER YOUR API';
+    $> git clone https://github.com/HART-Avionics/docs.git
     ```
 
 <a name="usage"></a>
 Usage
 --------
 <!-- Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.<br> -->
-*For more examples, please refer to the [Documentation]()*
-
+<!--
 <a name="faq"></a>
 FAQ
 ----
+-->
 
 <a name="roadmap"></a>
 Roadmap
 ----------
-See the [open issues]() for a list of proposed features (and known issues).
+See the [open issues](https://github.com/HART-Avionics/docs/issues) for a list of proposed features (and known issues).
 
 <a name="contributing"></a>
 Contributing
