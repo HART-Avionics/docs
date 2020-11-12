@@ -17,9 +17,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'HART Avionics Docs'
-copyright = '2020, Ian Paul, Jessica Jiang, Samuel Villegas, Spencer Carlson'
-author = 'Ian Paul, Jessica Jiang, Samuel Villegas, Spencer Carlson'
+project = 'HART Avionics'
+copyright = '2020, OSU HART'
+author = 'OSU HART'
 
 # The full version, including alpha/beta/rc tags
 release = '0.0.0'
