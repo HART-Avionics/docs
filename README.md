@@ -5,7 +5,6 @@ HART Avionics - EECS Documentation
 Table of Contents
 ---------------------
 - [About the Project](#about-the-project)
-  - [Built with](#about-the-project-built-with)
 - [Getting Started](#getting-started)
   - [Prerequisites](#getting-started-prerequisites)
   - [Installing](#getting-started-installing)
@@ -20,15 +19,7 @@ Table of Contents
 <a name="about-the-project"></a>
 About the Project
 ---------------------
-Documentation repo for the Oregon State Univerity AIAA High Altitude Rocket Team's ECE & CS avionics sub-team.
-
-<a name="about-the-project-built-with"></a>
-### Built with
-<!-- This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples. -->
-
-- 
-- 
-- 
+This is the documentation repo for the Oregon State Univerity AIAA High Altitude Rocket Team's ECE & CS avionics sub-team. This covers any system-wide and user-level documentation for the project. For more detailed documentation on project internals and developer documentation, see the corresponding project's repository.
 
 <a name="getting-started"></a>
 Getting Started
