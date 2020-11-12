@@ -30,9 +30,13 @@ Getting Started
 ### Prerequisites
 <!--List things you need to use the software and how to install them. -->
 
-- 
-- 
-- 
+- [AltOS](https://altusmetrum.org/AltOS/) is the OS running on the TeleMegas
+- [OpenRocket](https://github.com/openrocket/openrocket/releases) is the design & simulation software used by the mechanical engineers to design the rocket
+- [Node.js](https://nodejs.org/en/download/) & Express.js are used to serve the GUI backend
+- [Visual Studio](https://visualstudio.microsoft.com/downloads/) is used for building the GUI frontend
+<!--
+- [Docker](https://docs.docker.com/get-docker/) is used for creating consistent environments for development, testing, staging, and production
+-->
 
 <a name="getting-started-installing"></a>
 ### Installing
