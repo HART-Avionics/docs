@@ -22,7 +22,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      # Builds documentation using Sphinx
+      # Builds HTML documentation using Sphinx
       - name: Sphinx Build
         # You may pin to the exact commit or the version.
         # uses: ammaraskar/sphinx-action@8b4f60114d7fd1faeba1a712269168508d4750d2
@@ -33,4 +33,4 @@ jobs:
           # The command used to build your documentation.
           build-command: make build # optional, default is make html
           # Run before the build command, you can use this to install system level dependencies, for example with "apt-get update -y && apt-get install -y perl"
-          pre-build-command: pip install recommonmark # optional
+          pre-build-command: pip install recommonmark && apt-get install texlive-latex-recommended texlive-fonts-recommended texlive-latex-extra latexmk # optional
