@@ -22,16 +22,15 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
-
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: make build
-
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+      # Builds documentation using Sphinx
+      - name: Sphinx Build
+        # You may pin to the exact commit or the version.
+        # uses: ammaraskar/sphinx-action@8b4f60114d7fd1faeba1a712269168508d4750d2
+        uses: ammaraskar/sphinx-action@0.4
+        with:
+          # The folder containing your sphinx docs.
+          docs-folder: src/ # default is docs/
+          # The command used to build your documentation.
+          build-command: make build # optional, default is make html
+          # Run before the build command, you can use this to install system level dependencies, for example with "apt-get update -y && apt-get install -y perl"
+          #pre-build-command: # optional
