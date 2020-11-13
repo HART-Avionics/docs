@@ -33,4 +33,4 @@ jobs:
           # The command used to build your documentation.
           build-command: make build # optional, default is make html
           # Run before the build command, you can use this to install system level dependencies, for example with "apt-get update -y && apt-get install -y perl"
-          pre-build-command: pip install recommonmark && apt-get install texlive-latex-recommended texlive-fonts-recommended texlive-latex-extra latexmk # optional
+          pre-build-command: pip install recommonmark && apt-get install -y texlive-latex-recommended texlive-fonts-recommended texlive-latex-extra latexmk # optional
