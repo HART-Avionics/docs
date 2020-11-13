@@ -27,6 +27,7 @@ This is the documentation repo for the Oregon State Univerity AIAA High Altitude
 <!--This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section.-->
 
 - [Sphinx](https://www.sphinx-doc.org/en/master/usage/installation.html) documentation generator
+- [TexLive](https://www.tug.org/texlive/)
 
 <a name="getting-started"></a>
 Getting Started
@@ -49,7 +50,7 @@ Getting Started
   ```
 - [recommonmark](https://github.com/readthedocs/recommonmark)
   ```bash
-  $ pip install recommonmark
+  $ pip3 install recommonmark
   ```
 
 If you plan on building LaTeX PDF documentation, you'll also need the following packages:
@@ -73,7 +74,7 @@ The manual documentation is written mostly in Markdown, but Sphinx also has it's
 $ make build
 ```
 
-Sphinx will generate both HTML & LaTeX PDF documentation in a build directory. The HTML build is copied into the `docs/` directory for use with GitHub Pages.
+Sphinx will try to generate both HTML & LaTeX PDF documentation in a build directory. The HTML build is copied into the `docs/` directory for use with GitHub Pages and the PDF (if generated successfully) is copied into the root directory and renamed *ProjectCharter.pdf*. These options can be configured in the project Makefile.
 
 *For more examples, please refer to the official [Sphinx documentation](https://www.sphinx-doc.org/en/master/index.html)*
 
