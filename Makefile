@@ -5,7 +5,7 @@
 # from the environment for the first two.
 SPHINXOPTS    ?=
 SPHINXBUILD   ?= sphinx-build
-SOURCEDIR     = source
+SOURCEDIR     = src
 BUILDDIR      = build
 
 # Put it first so that "make" without argument is like "make help".
@@ -13,10 +13,11 @@ help:
 	@$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
 # Builds HTML docs & copies them to /docs folder for GitHub Pages
-build:
+build: clean
 	@make html
 	@cp -aR build/html/. docs
-	@make latexpdf
+	@make latexpdf LATEXMKOPTS="-silent"
+	@cp build/latex/hartavionics.pdf ./ProjectCharter.pdf
 
 .PHONY: help Makefile build
 
