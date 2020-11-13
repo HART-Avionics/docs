@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Build Documentation
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the main branch
@@ -34,3 +34,15 @@ jobs:
           build-command: make build # optional, default is make html
           # Run before the build command, you can use this to install system level dependencies, for example with "apt-get update -y && apt-get install -y perl"
           pre-build-command: pip install recommonmark && apt-get install -y texlive-latex-recommended texlive-fonts-recommended texlive-latex-extra latexmk # optional
+
+      # Save generated PDF documentation
+      - uses: actions/upload-artifact@v2
+        with:
+          name: PDF
+          path: ProjectCharter.pdf
+
+      # Save generated HTML documentation
+      - uses: actions/upload-artifact@v2
+        with:
+          name: HTML
+          path: docs/
