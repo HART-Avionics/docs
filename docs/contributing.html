@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contributing &#8212; HART Avionics 0.0.0 documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="contributing">
+<h1>Contributing<a class="headerlink" href="#contributing" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="how-to-workflow">
+<h2>How to Workflow<a class="headerlink" href="#how-to-workflow" title="Permalink to this headline">¶</a></h2>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>Project Breakdown Structure</p>
+<ul>
+<li><p>Backlog is list of proposed changes to PBS</p>
+<ul>
+<li><p>Add feature</p></li>
+<li><p>Fix Bug</p></li>
+<li><p>Refactor</p></li>
+</ul>
+</li>
+<li><p>If fork has uncertainty in design or implementation, create an issue</p></li>
+<li><p>PBS should be reflected in file system structure</p></li>
+<li><p>README.md’s are block metadata</p>
+<ul>
+<li><p>Block Definition &amp; Properties</p></li>
+<li><p>Interface Definitions &amp; Properties</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Gantt</p>
+<ul>
+<li><p>Organize backlog into parallel timelines</p></li>
+</ul>
+</li>
+<li><p>Kanban/Scrum</p>
+<ul>
+<li><p>Use Gantt chart to choose issues to move to “Done” for the sprint</p></li>
+<li><p>Decide which pull requests to merge, give feedback on, or work on</p></li>
+<li><p>Sprint analysis</p></li>
+</ul>
+</li>
+<li><p>Containerization</p>
+<ul>
+<li><p>Docker</p></li>
+<li><p>Consistent Dev Env =&gt; Test Env</p>
+<ul>
+<li><p>Code</p></li>
+<li><p>Build Tools</p></li>
+<li><p>Debug Tools</p></li>
+<li><p>Container per microservice type?</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Git</p>
+<ul>
+<li><p>Fork</p></li>
+<li><p>Clone</p></li>
+<li><p>Branch</p></li>
+<li><p>Add</p></li>
+<li><p>Commit</p></li>
+<li><p>Pull</p></li>
+<li><p>Push</p></li>
+<li><p>Pull Request</p></li>
+</ul>
+</li>
+<li><p>Test Driven Development</p>
+<ul>
+<li><p>API first</p></li>
+</ul>
+</li>
+<li><p>Live Docs</p>
+<ul>
+<li><p>Generated Docs</p></li>
+<li><p>Testable Docs?</p></li>
+</ul>
+</li>
+<li><p>Milestone Releases</p>
+<ul>
+<li><p>Snapshots of CI/CD</p></li>
+<li><p>Formal Review</p></li>
+<li><p>Planning for next milestone</p></li>
+</ul>
+</li>
+<li><p>Check out repo for practicing workflow</p></li>
+</ul>
+</div>
+<div class="section" id="how-to-build">
+<h2>How to Build<a class="headerlink" href="#how-to-build" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>modularity</p></li>
+<li><p>managing multiple configurations</p></li>
+</ul>
+</div>
+<div class="section" id="how-to-test">
+<h2>How to Test<a class="headerlink" href="#how-to-test" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="software-tests">
+<h3>Software Tests<a class="headerlink" href="#software-tests" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Unit Tests</p></li>
+<li><p>Integration Tests</p></li>
+<li><p>Hardware Emulation</p></li>
+<li><p>CI/CD</p></li>
+<li><p>Fuzzing</p></li>
+<li><p>?Tests produce automatic bug reports &amp; add issues to backlog?</p></li>
+</ul>
+</div>
+<div class="section" id="hardware-test-bench">
+<h3>Hardware Test-Bench<a class="headerlink" href="#hardware-test-bench" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Integration Tests with Software</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="how-to-debug">
+<h2>How to Debug<a class="headerlink" href="#how-to-debug" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Code Reviews</p></li>
+</ul>
+</div>
+<div class="section" id="how-to-interact-with-the-community">
+<h2>How to Interact with the Community<a class="headerlink" href="#how-to-interact-with-the-community" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Discussion Forum</p></li>
+<li><p>Backlog (See Suggesting PBS Modifications)</p></li>
+<li><p>Reporting Blocked Work</p></li>
+<li><p>Decision Board Meetings</p>
+<ul>
+<li><p>Send link to email list</p></li>
+</ul>
+</li>
+<li><p>Decision Board Membership</p>
+<ul>
+<li><p>Based on project involvement</p>
+<ul>
+<li><p>Contribute code, ideas, documentation? Get invitations!</p></li>
+</ul>
+</li>
+<li><p>Can revoke</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="how-to-proceed">
+<h2>How to Proceed<a class="headerlink" href="#how-to-proceed" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>How to science/engineer with rockets</p>
+<ul>
+<li><p>Hypothesize &amp; Test</p></li>
+<li><p>Analyze &amp; Fix</p></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">HART Avionics</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Project Overview</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, OSU HART.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/contributing.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
