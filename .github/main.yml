@@ -1,4 +1,4 @@
-# Uses Sphinx to build a documentation website and PDF from Markdown & reStructuredText files
+# Uses Sphinx to build and deploy a documentation website and PDF from Markdown & reStructuredText files
 
 name: "CI/CD"
 
