@@ -6,5 +6,6 @@ Welcome to HART Avionics's documentation!
 
    introduction
    overview
-   0.0_system_structure/TopLevel
-   .github/CONTRIBUTING
+   events
+   project_structure/Structure
+   contributing
