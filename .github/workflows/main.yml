@@ -8,97 +8,97 @@ on: push # TEST: run on all branches
 #   push:
 #     branches: [main, develop]
 
-# # A workflow run is made up of one or more jobs that can run sequentially or in parallel
-# jobs:
-#   # Job to test code examples, links, etc. for correctness before building documentation
-#   test:
-#     # The type of runner that the job will run on
-#     runs-on: ubuntu-latest
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # Job to test code examples, links, etc. for correctness before building documentation
+  test:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
 
-#     # Steps represent a sequence of tasks that will be executed as part of the job
-#     steps:
-#       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-#       - uses: actions/checkout@v2
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
 
-#       - run: echo "No tests configured"
+      - run: echo "No tests configured"
 
-#   # Job to build documentation
-#   build:
-#     # The type of runner that the job will run on
-#     runs-on: ubuntu-latest
-#     # Jobs that must complete successfully before this one will run
-#     needs: [test]
+  # Job to build documentation
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    # Jobs that must complete successfully before this one will run
+    needs: [test]
 
-#     # Steps represent a sequence of tasks that will be executed as part of the job
-#     steps:
-#       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-#       - uses: actions/checkout@v2
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
 
-#       # Builds documentation using Sphinx
-#       - name: Sphinx Build
-#         # You may pin to the exact commit or the version.
-#         # uses: ammaraskar/sphinx-action@8b4f60114d7fd1faeba1a712269168508d4750d2
-#         uses: ammaraskar/sphinx-action@0.4
-#         with:
-#           # The folder containing your Makefile
-#           docs-folder: ./ # default is `docs/`
-#           # The command used to build your documentation.
-#           build-command: make build # optional, default is `make html`
-#           # Run before the build command, you can use this to install system level dependencies, for example with "apt-get update -y && apt-get install -y perl"
-#           pre-build-command: pip install recommonmark && apt-get install -y texlive-latex-recommended texlive-fonts-recommended texlive-latex-extra latexmk # optional
+      # Builds documentation using Sphinx
+      - name: Sphinx Build
+        # You may pin to the exact commit or the version.
+        # uses: ammaraskar/sphinx-action@8b4f60114d7fd1faeba1a712269168508d4750d2
+        uses: ammaraskar/sphinx-action@0.4
+        with:
+          # The folder containing your Makefile
+          docs-folder: ./ # default is `docs/`
+          # The command used to build your documentation.
+          build-command: make build # optional, default is `make html`
+          # Run before the build command, you can use this to install system level dependencies, for example with "apt-get update -y && apt-get install -y perl"
+          pre-build-command: pip install recommonmark && apt-get install -y texlive-latex-recommended texlive-fonts-recommended texlive-latex-extra latexmk # optional
 
-#       - name: Save HTML artifact
-#         uses: actions/upload-artifact@v2
-#         with:
-#           # Artifact name
-#           name: HTML # optional, default is artifact
-#           # A file, directory or wildcard pattern that describes what to upload
-#           path: build/html/
-#           if-no-files-found: error # optional, default is warn
-#           # Duration after which artifact will expire in days. 0 means using default retention.
-#           retention-days: 0 # optional
+      - name: Save HTML artifact
+        uses: actions/upload-artifact@v2
+        with:
+          # Artifact name
+          name: HTML # optional, default is artifact
+          # A file, directory or wildcard pattern that describes what to upload
+          path: build/html/
+          if-no-files-found: error # optional, default is warn
+          # Duration after which artifact will expire in days. 0 means using default retention.
+          retention-days: 0 # optional
 
-#       - name: Save PDF artifact
-#         uses: actions/upload-artifact@v2
-#         with:
-#           # Artifact name
-#           name: PDF # optional, default is artifact
-#           # A file, directory or wildcard pattern that describes what to upload
-#           path: ProjectCharter.pdf
-#           if-no-files-found: warn # optional, default is warn
-#           # Duration after which artifact will expire in days. 0 means using default retention.
-#           retention-days: 0 # optional
+      - name: Save PDF artifact
+        uses: actions/upload-artifact@v2
+        with:
+          # Artifact name
+          name: PDF # optional, default is artifact
+          # A file, directory or wildcard pattern that describes what to upload
+          path: ProjectCharter.pdf
+          if-no-files-found: warn # optional, default is warn
+          # Duration after which artifact will expire in days. 0 means using default retention.
+          retention-days: 0 # optional
 
-#   deploy:
-#     # The type of runner that the job will run on
-#     runs-on: ubuntu-latest
+  deploy:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
 
-#     # Jobs that must complete successfully before this one will run
-#     needs: [build]
-#     # # Run only on main branch when previous jobs complete successfully
-#     # if: success() && github.ref == 'refs/heads/main'
+    # Jobs that must complete successfully before this one will run
+    needs: [build]
+    # # Run only on main branch when previous jobs complete successfully
+    # if: success() && github.ref == 'refs/heads/main'
 
-#     # Steps represent a sequence of tasks that will be executed as part of the job
-#     steps:
-#       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-#       - uses: actions/checkout@v2
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
       
-#       - name: Download Build Artifact - HTML Documentation
-#         uses: actions/download-artifact@v2.0.6
-#         with:
-#           # Artifact name
-#           name: HTML # optional
-#           # Destination path
-#           path: build/html # optional
+      - name: Download Build Artifact - HTML Documentation
+        uses: actions/download-artifact@v2.0.6
+        with:
+          # Artifact name
+          name: HTML # optional
+          # Destination path
+          path: build/html # optional
 
-#       - name: Deploy to GitHub Pages
-#         # You may pin to the exact commit or the version.
-#         # uses: peaceiris/actions-gh-pages@bbdfb200618d235585ad98e965f4aafc39b4c501
-#         uses: peaceiris/actions-gh-pages@v3.7.3
-#         with:
-#           # Set a generated GITHUB_TOKEN for pushing to the remote branch.
-#           github_token: ${{ secrets.GITHUB_TOKEN }}
-#           # Set an input directory for deployment.
-#           publish_dir: build/html/ # optional, default is public
-#           # Keep only the latest commit on a GitHub Pages branch
-#           force_orphan: true # optional, default is false
+      - name: Deploy to GitHub Pages
+        # You may pin to the exact commit or the version.
+        # uses: peaceiris/actions-gh-pages@bbdfb200618d235585ad98e965f4aafc39b4c501
+        uses: peaceiris/actions-gh-pages@v3.7.3
+        with:
+          # Set a generated GITHUB_TOKEN for pushing to the remote branch.
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # Set an input directory for deployment.
+          publish_dir: build/html/ # optional, default is public
+          # Keep only the latest commit on a GitHub Pages branch
+          force_orphan: true # optional, default is false
