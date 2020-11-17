@@ -12,10 +12,9 @@ BUILDDIR      = build
 help:
 	@$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
-# Builds HTML docs & copies them to /docs folder for GitHub Pages
+# Builds both HTML & LaTeX PDF docs
 build: clean
 	@make html
-	@cp -aR build/html/. docs
 	@make latexpdf LATEXMKOPTS="-silent"
 	@cp build/latex/hartavionics.pdf ./ProjectCharter.pdf
 
