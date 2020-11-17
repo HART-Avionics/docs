@@ -1,6 +1,17 @@
 Title
 ======
 
+Type
+-----
+<!--
+A change to the Project Structure:
+- Feature Request
+- Bug Fix
+- Refactor
+
+Or a Research Spike
+-->
+
 Steps to Reproduce
 ---------------------
 1. 
@@ -9,13 +20,19 @@ Steps to Reproduce
 
 Environment
 ------------
-<!-- Browser, OS, architecture, etc. -->
+<!-- Browser, OS, architecture, software version, etc. -->
 
 Expected Result
 ----------------
 
 Actual Result
 ---------------
+<!-- Include logs, error output, etc. -->
+
+<!--
+Other Comments
+---------------
+-->
 
 Severity/Priority
 ------------------

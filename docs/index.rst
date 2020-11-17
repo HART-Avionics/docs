@@ -1,10 +1,11 @@
-Welcome to HART Avionics's documentation!
-==============================================
+Welcome to OSU HART Avionics's Documentation!
+===============================================
 
 .. toctree::
    :maxdepth: 3
 
    introduction
    overview
-   0.0_system_structure/TopLevel
-   .github/CONTRIBUTING
+   events
+   project_structure/Structure
+   contributing
