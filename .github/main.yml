@@ -77,8 +77,8 @@ jobs:
     # Jobs that must complete successfully before this one will run
     needs: [build]
 
-    # Run only on main branch when previous jobs complete successfully
-    if: github.ref == 'refs/heads/main'
+#     # Run only on main branch when previous jobs complete successfully
+#     if: github.ref == 'refs/heads/main'
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
