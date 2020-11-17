@@ -74,7 +74,7 @@ The manual documentation is written mostly in Markdown, but Sphinx also has it's
 $ make build
 ```
 
-Sphinx will try to generate both HTML & LaTeX PDF documentation in a build directory. The HTML build is copied into the `docs/` directory for use with GitHub Pages and the PDF (if generated successfully) is copied into the root directory and renamed *ProjectCharter.pdf*. These options can be configured in the project Makefile.
+Sphinx will try to generate both HTML & LaTeX PDF documentation in a build directory. The PDF (if generated successfully) is copied into the root directory and renamed *ProjectCharter.pdf*. These options can be configured in the project Makefile.
 
 *For more examples, please refer to the official [Sphinx documentation](https://www.sphinx-doc.org/en/master/index.html)*
 
