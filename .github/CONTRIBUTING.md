@@ -1,86 +1,20 @@
 Contributing
-==================
-## How to Workflow
+==============
+Contributions to the project are primarily done through modifications to the system structure, improvements to documentation wording, and evaluation of potential solutions. This includes adding, modifying, or restructuring blocks and interfaces as well as correcting spelling/grammar mistakes and writing research reports on a new design.
+
+How Can I Contribute?
 ----------------------
-- Project Breakdown Structure
-  - Backlog is list of proposed changes to PBS
-    - Add feature
-    - Fix Bug
-    - Refactor
-  - If fork has uncertainty in design or implementation, create an issue
-  - PBS should be reflected in file system structure
-  - README.md’s are block metadata
-    - Block Definition & Properties
-    - Interface Definitions & Properties
-- Gantt
-  - Organize backlog into parallel timelines
-- Kanban/Scrum
-  - Use Gantt chart to choose issues to move to “Done” for the sprint
-  - Decide which pull requests to merge, give feedback on, or work on
-  - Sprint analysis
-- Containerization
-  - Docker
-  - Consistent Dev Env => Test Env
-    - Code
-    - Build Tools
-    - Debug Tools
-    - Container per microservice type?
-- Git
-  - Fork
-  - Clone
-  - Branch
-  - Add
-  - Commit
-  - Pull
-  - Push
-  - Pull Request
-- Test Driven Development
-  - API first
-- Live Docs
-  - Generated Docs
-  - Testable Docs?
-- Milestone Releases
-  - Snapshots of CI/CD
-  - Formal Review
-  - Planning for next milestone
-- Check out repo for practicing workflow
+### Report Bugs
+To report a bug, use the `.github/ISSUE_TEMPLATE/bug_report.md` to create a new `Bug Report` issue.
 
-How to Build
------------------
-- modularity
-- managing multiple configurations
+### Suggest Features
+To suggest a feature, use the `.github/ISSUE_TEMPLATE/feature_request.md` to create a new `Feature Request` issue.
 
-How to Test
----------------
-### Software Tests
-- Unit Tests
-- Integration Tests
-- Hardware Emulation
-- CI/CD
-- Fuzzing
-- ?Tests produce automatic bug reports & add issues to backlog?
+### Create a Pull Request
+If you want to add a few quick changes or are adding changes related to an issue,
 
-### Hardware Test-Bench
-- Integration Tests with Software
+1. Fork the repository
+2. Make your changes
+3. Use the `.github/PULL_REQUEST_TEMPLATE.md` to create a pull request describing your changes
 
-How to Debug
-------------------
-- Code Reviews
-
-How to Interact with the Community
------------------------------------------------
-- Discussion Forum
-- Backlog (See Suggesting PBS Modifications)
-- Reporting Blocked Work
-- Decision Board Meetings
-  - Send link to email list
-- Decision Board Membership
-  - Based on project involvement
-    - Contribute code, ideas, documentation? Get invitations!
-  - Can revoke
-
-How to Proceed
------------------------
-- How to science/engineer with rockets
-  - Hypothesize & Test
-  - Analyze & Fix
+Otherwise, please use the `.github/ISSUE_TEMPLATE.md` to create a new `Feature Request` issue and include a comment requesting to be assigned to that issue.
