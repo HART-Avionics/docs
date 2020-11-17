@@ -1,6 +1,6 @@
 Ground Station
 ===============
-The telemetry visualization system with simulation capabilities
+The Ground Station is the Ground Computer plus all the supporting software & hardware associated with it.
 
 .. toctree::
    :maxdepth: 3

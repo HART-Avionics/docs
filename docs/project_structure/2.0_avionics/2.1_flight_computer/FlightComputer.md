@@ -3,9 +3,8 @@ Flight Computer
 <!-- Block Definition -->
 The Flight Computer is the hardware & software that triggers the rocket events.
 
-Interface Definitions & Properties
------------------------------------
-### Inputs
+Inputs
+--------
 - Environment (External)
   - Acceleration
     - Max: 50 G
@@ -19,7 +18,8 @@ Interface Definitions & Properties
   - Vnominal: 3.7 V
   - Vmax: 16 V
 
-### Outputs
+Outputs
+---------
 - Pyro Charges (External)
   - Vmin: 4 V
   - Vnominal: 12 V

@@ -3,17 +3,17 @@ Ground Computer
 <!-- Block Definition -->
 The Ground Computer runs the GUI Server and may run the GUI Client as well.
 
-Interface Definitions & Properties
------------------------------------
-### Inputs
+Inputs
+--------
 - Power Systems
 - Transceiver
 - User (External)
 
-### Outputs
+Outputs
+---------
 - Environment (External)
 
 Block Properties
 -----------------
-AltOS
-Raspberry Pi?
+- Runs AltOS for configuring the commercial avionics
+- Raspberry Pi

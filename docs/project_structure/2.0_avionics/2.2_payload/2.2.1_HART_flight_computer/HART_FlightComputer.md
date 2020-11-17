@@ -3,9 +3,8 @@ HART Flight Computer
 <!-- Block Definition -->
 The HART Flight Computer is the student-developed flight computer currently under development.
 
-Interface Definitions & Properties
------------------------------------
-### Inputs
+Inputs
+--------
 - Environment (External)
   - Acceleration
     - Max: 50 G
@@ -19,7 +18,8 @@ Interface Definitions & Properties
   - Vnominal: 3.7 V
   - Vmax: 16 V
 
-### Outputs
+Outputs
+---------
 - Ground Station GUI Server
   - Flight data structure matches AltOS data structure
 

@@ -1,6 +1,6 @@
 Avionics
 ==========
-Avionics refers to all the electronics onboard the rocket.
+Avionics refers to all the software & electronics onboard the rocket.
 
 .. toctree::
    :maxdepth: 3

@@ -1,7 +1,15 @@
 Power Systems
 ==============
-<!-- Block Definition & Properties -->
-The power systems power the electronics. The avionics are
+<!-- Block Definition -->
+The power systems power the electronics.
 
-<!-- Interface Definitions & Properties -->
-Outputs 3.3V or 5V to the microcontrollers.
+Inputs
+-------
+- 
+
+Outputs
+--------
+- 3.3V or 5V to the microcontrollers.
+
+Block Properties
+-----------------
