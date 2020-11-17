@@ -1,6 +1,6 @@
 # Uses Sphinx to build a documentation website and PDF from Markdown & reStructuredText files
 
-name: CI/CD
+name: "CI/CD"
 
 # Controls when the action will run. Triggers the workflow on push events
 # but only for the main and develop branches
@@ -8,19 +8,19 @@ on: push # TEST: run on all branches
 #   push:
 #     branches: [main, develop]
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
-jobs:
-  # Job to test code examples, links, etc. for correctness before building documentation
-  test:
-    # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+# # A workflow run is made up of one or more jobs that can run sequentially or in parallel
+# jobs:
+#   # Job to test code examples, links, etc. for correctness before building documentation
+#   test:
+#     # The type of runner that the job will run on
+#     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+#     # Steps represent a sequence of tasks that will be executed as part of the job
+#     steps:
+#       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+#       - uses: actions/checkout@v2
 
-      - run: echo "No tests configured"
+#       - run: echo "No tests configured"
 
 #   # Job to build documentation
 #   build:
