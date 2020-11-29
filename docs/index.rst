@@ -7,5 +7,5 @@ Welcome to HART Avionics's documentation!
    introduction
    overview
    events
-   project_structure/Structure
+   project_structure/README
    contributing

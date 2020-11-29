@@ -1,7 +1,7 @@
 Power Systems
 ==============
 <!-- Block Definition -->
-The power systems power the electronics.
+The power systems power the electronics. (May be split into multiple sub-systems)
 
 Inputs
 -------

@@ -1,7 +1,7 @@
-Transceiver
-============
+Ground Telemetry
+=================
 <!-- Block Definition -->
-The Transceiver communicates with the Avionics and relays the telemetry back to the Ground Computer.
+The Ground Telemetry communicates with the Avionics and relays the data back to the Ground Computer.
 
 Inputs
 --------
