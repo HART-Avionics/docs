@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Sequence of Events &#8212; HART Avionics 0.0.0 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="System Structure" href="project_structure/Structure.html" />
+    <link rel="prev" title="Project Overview" href="overview.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="sequence-of-events">
+<h1>Sequence of Events<a class="headerlink" href="#sequence-of-events" title="Permalink to this headline">¶</a></h1>
+<p>The rocket avionics system requirements are structured around the following sequence of events:</p>
+<div class="section" id="pre-launch">
+<h2>Pre-Launch<a class="headerlink" href="#pre-launch" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Hardware Safety Check</p></li>
+<li><p>Configure Flight Software</p></li>
+<li><p>Software System Check</p></li>
+<li><p>Calibration</p></li>
+</ul>
+</div>
+<div class="section" id="launch">
+<h2>Launch<a class="headerlink" href="#launch" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Send launch command</p></li>
+<li><p>Ignite booster</p></li>
+<li><p>Detect launch</p></li>
+</ul>
+</div>
+<div class="section" id="in-flight">
+<h2>In Flight<a class="headerlink" href="#in-flight" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Record raw sensor data</p></li>
+<li><p>Record flight data</p></li>
+<li><p>Record rocket vitals (engine temperature/pressure)</p></li>
+<li><p>Record video</p></li>
+<li><p>Estimate current state (position/velocity/etc.)</p></li>
+</ul>
+</div>
+<div class="section" id="stage-separation">
+<h2>Stage Separation<a class="headerlink" href="#stage-separation" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Detect booster depletion</p></li>
+<li><p>Ignite separation charges</p></li>
+</ul>
+</div>
+<div class="section" id="upper-stage-ignition">
+<h2>Upper-Stage Ignition<a class="headerlink" href="#upper-stage-ignition" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Delay to save fuel and increase peak altitude</p></li>
+<li><p>Ignite sustainer</p></li>
+</ul>
+</div>
+<div class="section" id="parachute-deployment">
+<h2>Parachute Deployment<a class="headerlink" href="#parachute-deployment" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Detect apogee</p></li>
+<li><p>Trigger chute deployment charges</p></li>
+</ul>
+</div>
+<div class="section" id="recovery">
+<h2>Recovery<a class="headerlink" href="#recovery" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Transmit signal for locating the rocket once it lands</p></li>
+<li><p>Download flight data for further analysis</p></li>
+</ul>
+</div>
+<div class="section" id="analysis">
+<h2>Analysis<a class="headerlink" href="#analysis" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Run more computationally intensive algorithms on the recorded raw sensor data to determine if the flight computer is functioning properly.</p></li>
+<li><p>Replay the flight in greater detail</p></li>
+<li><p>Use data analysis techniques to create a model of the flight</p></li>
+<li><p>Compare flight model to predicted/hypothesized model in order to inform future decisions &amp; improvements</p></li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">HART Avionics</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Project Overview</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Sequence of Events</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#pre-launch">Pre-Launch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#launch">Launch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#in-flight">In Flight</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#stage-separation">Stage Separation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#upper-stage-ignition">Upper-Stage Ignition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#parachute-deployment">Parachute Deployment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#recovery">Recovery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#analysis">Analysis</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="project_structure/Structure.html">System Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="overview.html" title="previous chapter">Project Overview</a></li>
+      <li>Next: <a href="project_structure/Structure.html" title="next chapter">System Structure</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, OSU HART.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/events.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
