@@ -64,7 +64,7 @@ $ sudo apt-get install texlive-latex-recommended texlive-fonts-recommended texli
 ### Installing
 1. Clone the repo
     ```bash
-    $> git clone https://github.com/HART-Avionics/docs.git
+    $ git clone https://github.com/HART-Avionics/docs.git
     ```
 
 <a name="usage"></a>
