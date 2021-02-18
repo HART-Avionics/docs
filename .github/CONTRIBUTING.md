@@ -15,6 +15,8 @@ If you want to add a few quick changes or are adding changes related to an issue
 
 1. Fork the repository
 2. Make your changes
-3. Use the `.github/PULL_REQUEST_TEMPLATE.md` to create a pull request describing your changes
+3. Use the [`.github/PULL_REQUEST_TEMPLATE.md`][PR-template] to create a pull request describing your changes
 
 Otherwise, please use the `.github/ISSUE_TEMPLATE.md` to create a new `Feature Request` issue and include a comment requesting to be assigned to that issue.
+
+[PR-template]: PULL_REQUEST_TEMPLATE/pull_request_template.md
