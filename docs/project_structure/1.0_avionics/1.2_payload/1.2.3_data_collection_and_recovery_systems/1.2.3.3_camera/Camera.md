@@ -1,7 +1,7 @@
 Camera
 ========
 <!-- Block Definition -->
-Record video through a window in the side of the rocket
+The camera records video of the flight through a small window in the side of the rocket.
 
 Inputs
 --------
@@ -13,3 +13,5 @@ Outputs
 
 Block Properties
 ---------------------------
+GoPro
+

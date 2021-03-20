@@ -9,3 +9,4 @@ Welcome to HART Avionics's documentation!
    events
    project_structure/README
    contributing
+   ../.github/CONTRIBUTING.md

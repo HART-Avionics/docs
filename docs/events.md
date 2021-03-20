@@ -1,3 +1,4 @@
+.. _events-docs
 Sequence of Events
 ==================
 The rocket avionics system requirements are structured around the following sequence of events:

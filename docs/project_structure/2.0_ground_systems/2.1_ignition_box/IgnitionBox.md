@@ -1,7 +1,7 @@
-Launch Box
-===========
+Ignition Box
+=============
 <!-- Block Definition -->
-The Launch Box ignites the booster when launch signal received from Control Box.
+The Ignition Box ignites the rocket booster when launch signal is received from the Control Box.
 
 Inputs
 --------
