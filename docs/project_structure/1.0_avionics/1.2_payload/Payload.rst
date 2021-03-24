@@ -5,7 +5,7 @@ The payload refers to all the electronics onboard the rocket that are not respon
 .. toctree::
    :maxdepth: 3
 
-   2.2.1_HART_flight_computer/README
-   2.2.2_tracking_beacon/README
-   2.2.3_rocket_vitals/README
-   2.2.4_camera/README
+   1.2.1_payload_power/PayloadPower
+   1.2.2_HART_flight_controller/FlightController
+   1.2.3_data_collection_and_recovery_systems/DataCollectionAndRecoverySystems
+

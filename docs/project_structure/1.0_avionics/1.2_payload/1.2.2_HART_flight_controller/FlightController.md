@@ -29,7 +29,7 @@ Outputs
 
 Block Properties
 -----------------
-For safety reasons, we are currently required to use commercially certified products to control the rocket events, but the plan is to eventually replace the commercial flight controllers with a student-developed solution.
+For safety reasons, we are currently required to use commercially certified products to control the pyrotechnic events, but the plan is to eventually replace the commercial flight controllers with this student-developed solution.
 
 <!-- Links -->
 [hardware-repository]: https://github.com/HART-Avionics/OSU-HART-Flight-Controller

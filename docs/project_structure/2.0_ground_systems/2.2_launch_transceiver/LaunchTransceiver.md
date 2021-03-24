@@ -5,13 +5,15 @@ The Launch Transceiver is the transceiver that manages the communication between
 
 Inputs
 --------
-- Power Systems
-- Control Box
-  - 8-bit Launch Signal
+- 
+- 
+- 
 
 Outputs
 ---------
-- Booster E-Match (External)
+- 
+- 
+- 
 
 Block Properties
 ---------------------------
